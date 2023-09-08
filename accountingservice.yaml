@@ -8,6 +8,9 @@ metadata:
   creationTimestamp: "2023-09-06T13:18:28Z"
   generation: 1
   labels:
+    tags.datadoghq.com/env: otel-demo
+    tags.datadoghq.com/service: accountingservice
+    tags.datadoghq.com/version: 1.4.0
     app.kubernetes.io/component: accountingservice
     app.kubernetes.io/instance: my-otel-demo
     app.kubernetes.io/managed-by: Helm
@@ -36,6 +39,9 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
+        tags.datadoghq.com/env: otel-demo
+        tags.datadoghq.com/service: accountingservice
+        tags.datadoghq.com/version: 1.4.0
         app.kubernetes.io/component: accountingservice
         app.kubernetes.io/instance: my-otel-demo
         app.kubernetes.io/name: my-otel-demo-accountingservice
